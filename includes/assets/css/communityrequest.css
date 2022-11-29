@@ -1,0 +1,67 @@
+#request
+{
+  margin-top: 50px;  
+}
+#email_address
+{
+  max-width: 300px;
+}
+.errorlist
+{
+  color: red;
+}
+.get-started-btn
+{
+  margin-left: 0 !important;
+}
+#applicants {
+  font-family: 'Advent Pro';
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#applicants td, #applicants th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  word-break: break-all;
+  text-align: center;
+}
+
+#applicants tr:nth-child(even){background-color: #D8ECFD;}
+
+#applicants tr:hover {background-color: #ddd;}
+
+#applicants th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #FF5757;
+  color: white;
+}
+/*   
+.user 
+{
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .user 
+  {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  } */
+  .applicants
+  {
+    font-size: 18px !important;
+  }
+  

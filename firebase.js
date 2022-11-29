@@ -1,0 +1,54 @@
+window.onload = function() {
+    render();
+};
+
+function render() {
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+    recaptchaVerifier.render();
+    
+}
+
+function phoneAuth() {
+    //get the number
+    var number = document.getElementById('number').value;
+//     //it takes two parameter first one is number and second one is recaptcha
+    firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function(confirmationResult) {
+        //s is in lowercase
+        window.confirmationResult = confirmationResult;
+        coderesult = confirmationResult;
+        console.log(coderesult);
+        alert("Message sent");
+    }).catch(function(error) {
+        alert(error.message);
+    });
+
+
+}
+
+// function codeverify() {
+//     var code = document.getElementById('verifyNumber').value;
+
+//     //alert(code);
+//     coderesult.confirm(code).then(function(result) {
+//         alert("Successfully registered");
+//         location.replace(www.google.com);
+//         //var user = result.user;
+//        // console.log(user);
+//         //code.onClick = "location.href='login.php'";
+//     }).catch(function(error) {
+//         alert(error.message);
+//     });
+function codeverify() {
+    var code = document.getElementById('verifyNumber').value;
+
+    //alert(code);
+    check = coderesult.confirm(code);
+    if(check == True){
+        alert("YEs");
+    }else{
+        alert("No");
+    }
+    }
+    
+
+    

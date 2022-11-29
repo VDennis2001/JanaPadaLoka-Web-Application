@@ -1,0 +1,77 @@
+main {
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.bg-modal {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.modal-content {
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    height: fit-content;
+    background-color: #acd9ff;
+    text-align: center;
+    padding: 3%;
+    font-size: larger !important;
+    box-shadow: 0 0 10px 5px #FF5252;
+}
+
+.community-join {
+    border-radius: 10px;
+    height: 10vh;
+    margin: 2% 0 2% 0;
+    background: rgb(255, 82, 82);
+    background: linear-gradient(90deg, #FF5252 10px, rgb(238, 173, 173) 0%);
+    font-size: 1vw;
+    padding: 20px;
+}
+
+@media (max-width:850px) {
+    .modal-content {
+        width: 80%;
+        height: fit-content;
+        text-align: left;
+        padding: 3%;
+    }
+    .community-join {
+        height: 10vh;
+        font-size: 12px;
+    }
+    .right {
+        font-size: 12px;
+        right: 0%;
+    }
+}
+
+.community-join:hover {
+    background: #1d325e !important;
+    background: linear-gradient(90deg, #1d325e 10px, rgb(125, 171, 231) 0%) !important;
+}
+
+.arrow {
+    color: #1d325e;
+}
+
+.right {
+    position: absolute;
+    right: 12%;
+    font-weight: bolder;
+    color: #1d325e;
+}

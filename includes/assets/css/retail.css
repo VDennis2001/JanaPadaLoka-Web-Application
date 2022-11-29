@@ -1,0 +1,194 @@
+ /*--------------------------------------------------------------
+  # Retail Form
+  --------------------------------------------------------------*/
+  .card-img-top
+  {
+    height: 250px;
+    border-radius: 25px 25px 0 0 ;
+  }
+
+  @media (min-width:1500px) {
+
+    .card-img-top
+    {
+        border-radius:0 ;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        border:none;
+        box-shadow: 0 0 10px black inset;
+    }
+      
+  }
+
+  #stores .card
+  {
+      border-radius: 25px;
+      text-align: center;
+      margin: 20px;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px 0 #1d325e;
+  }
+
+  #stores .card .get-started-btn
+  {
+      margin: 10px !important;
+  }
+
+  #stores .card h1
+  {
+      text-transform:uppercase;
+      white-space: nowrap;
+  }
+  
+  #stores .card:hover
+  {
+      -webkit-box-shadow: 0 4px 6px 0 #ff5757;
+      box-shadow: 0 8px 16px 0 #ff5757;
+  }
+  
+  #stores .view
+  {
+      margin: 10px;
+  }
+
+
+  #resources {
+    background-color: #acd9ff;
+    margin-top: 50px;
+    padding: 20px;
+    display: none;
+    justify-content: space-evenly;
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    top: 3%;
+    bottom: 10%;
+    width: 600px; /* Full width */
+    width: 80%;
+    height:fit-content;
+    margin-left: 10%;
+    position:absolute;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 15px 10px #1d325e;
+    box-shadow: 0 0 10px 10px #1d325e;
+    text-align:center;
+    padding-bottom:50px;
+  }
+  #resources label
+  {
+   width:200px;
+   text-align:left;
+  }
+  #resources select, #resources input
+  {
+    width:200px;
+  }
+  
+  #resources .resources-des {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  #resources .resources-des {
+    display: flex;
+    margin-left: 13.25%;
+    margin-bottom: 20px;
+  }
+  
+  .resources-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    float: right;
+    display: flex;
+    /* margin-top: -70px; */
+    font-size: 28px;
+    color: red;
+  }
+  .resources-close a {
+    font-size: 28px;
+    color: red;
+  }
+  #resources .resources-container {
+    margin: 0px;
+    padding: 0;
+    margin-left: 13.25%;
+  }
+
+  #resources .resources-table 
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #resources .resources-table tr td {
+    padding: 15px;
+    font-size: 26px;
+    color: #ff5757;
+  }
+  
+  #resources .resources-table input + select {
+    height: 40px;
+    width: 35vw;
+    margin-left: 17%;
+    align-self: center;
+    color: #1d325e;
+    font-size: 22px;
+  }
+
+  #resources input[type="file"] 
+  {
+     display: inline-block;
+  }
+ 
+  
+  #resources .resources-table input:focus + select{
+    outline: none;
+  }
+  
+  #resources .resources-table .submit-host {
+    margin-left: 10%;
+    height: 40px;
+    background-color: #ff5757;
+    color: white;
+    width: 50%;
+    border: none;
+  }
+  
+  @media (max-width: 500px) {
+    #resources .resources-table td {
+      padding: 5px !important;
+      font-size: 18px !important;
+    }
+  
+    #resources .resources-table input {
+      height: 25px;
+      margin-left: 10%;
+      align-self: center;
+      font-size: 12px;
+    }
+  }
+
+  .card-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #c5c5c5;
+    margin-bottom: 30px;
+    float: left;
+    border-radius: 10px;
+}
+.card-box .card-thumbnail {
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 1s;
+}
+.card-box .card-thumbnail:hover {
+    transform: scale(1.2);
+}
+.card-box h3 a {
+    font-size: 20px;
+    text-decoration: none;
+}

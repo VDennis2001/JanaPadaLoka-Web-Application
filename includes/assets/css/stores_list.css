@@ -1,0 +1,40 @@
+#stores
+{
+    margin-top: 20px;
+}
+main
+{
+    min-height:95vh !important;
+}
+#stores .st-bus
+{     
+    background-color: #ff5757;
+    border-radius: 15px !important;
+}
+
+
+
+#stores .card
+{
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #1d325e;
+    min-height: 200px;
+}
+#stores .card h1
+{
+    text-transform:uppercase;
+}
+
+#stores .card:hover
+{
+    -webkit-box-shadow: 0 4px 6px 0 #ff5757;
+    box-shadow: 0 8px 16px 0 #ff5757;
+}
+
+#stores .view
+{
+    margin: 10px;
+}

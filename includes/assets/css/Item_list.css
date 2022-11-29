@@ -1,0 +1,116 @@
+#items
+{
+  margin-top: 40px !important;
+}
+  
+main
+{
+  min-height: 95vh !important;
+}
+  .card-deck 
+  {
+    margin: 0 -15px;
+    justify-content: space-between;
+    height: auto;
+  }
+  
+  .card-deck .card 
+  {
+    border-radius: 25px;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #1d325e;
+    margin: 0 0 1rem;
+    border-radius: 25px;
+    transition: 2s;
+  }
+  
+  .card:hover
+{
+  -webkit-box-shadow: 0 4px 6px 0 #ff5757;
+  box-shadow: 0 8px 16px 0 #ff5757;
+  transform: scale(1.05);
+}
+
+
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+  .card-img-top
+{
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-to-cart
+{
+  padding: 10px;
+  width: auto;
+  color: white !important; 
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.add-to-cart:hover
+{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 48.7%;
+      flex: 0 0 48.7%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+    }
+  }
+  
+  @media (min-width: 992px)
+  {
+    .card-deck .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24%;
+    }
+  }
+  

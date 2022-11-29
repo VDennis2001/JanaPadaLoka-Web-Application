@@ -1,0 +1,532 @@
+/*--------------------------------------------------------------
+# Bulletin
+--------------------------------------------------------------*/
+
+.Bulletin {
+    margin-top: 80px;
+}
+
+.col-xl-3 .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+    padding: 3% 6% 3% 6%;
+    box-shadow: 0px 0px 13px 5px rgba(249, 158, 159, 0.5) !important;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.card>hr {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.35rem - 1px) calc(0.35rem - 1px) 0 0;
+}
+
+
+/*--------------------------------------------------------------
+  # Sub Header
+  --------------------------------------------------------------*/
+
+#interest-title {
+    /* background-color: #ff5757; */
+    margin: 0px;
+    /* height: 80px; */
+    padding: 0.215%;
+}
+
+.interest-feed {
+    background-color: #ff5757;
+    color: black;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+.interest-title-container {
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.interest-title-container button {
+    border: none;
+    background: none;
+}
+
+.interest-title-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.interest-title-container h1 {
+    height: auto;
+    font-size: 28px;
+    /* font-size: 1.77vw; */
+    font-weight: bolder;
+    color: white;
+    margin-top: 0 !important;
+}
+
+span.feed-title h1 {
+    text-transform: uppercase;
+    width: auto;
+    margin: 0% !important;
+    text-align: left;
+}
+
+button {
+    margin-top: 0 !important;
+}
+
+.interest-title-container button h2 {
+    font-size: 22px;
+    transition: all 1 ease-in;
+    color: white;
+    margin-top: 0 !important;
+}
+
+.interest-title-container button h2:hover {
+    color: #1d3558;
+}
+
+.interest-title-container input {
+    border: none;
+    font-family: 'Advent Pro';
+    font-size: 1.4rem;
+    max-height: 35px;
+    width: 23vw;
+    /* align-self: center; */
+}
+
+.interest-title-container input:focus {
+    outline: none;
+}
+
+@media all and (max-width: 721px) {
+    .interest-title-container {
+        display: block;
+    }
+    .interest-title-container input {
+        width: 30vw;
+    }
+    .interest-title-container h1 {
+        font-size: 7vw;
+    }
+    .interest-title-container button h2 {
+        font-size: 4.5vw;
+    }
+}
+
+@media all and (max-width: 412px) {
+    div.interest-actions {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .interest-feed {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .interest-title-container {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .interest-title-container input {
+        font-size: 6vw;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # Host an Event
+  --------------------------------------------------------------*/
+
+#host-an-event {
+    background-color: #acd9ff;
+    color: #001636;
+    margin-top: 50px;
+    padding: 20px;
+    display: none;
+    justify-content: space-evenly;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 10%;
+    top: 3%;
+    right: 10%;
+    bottom: 10%;
+    width: 80%;
+    /* Full width */
+    height: auto !important;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px grey;
+}
+
+#host-an-event .event-details-des {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#host-an-event .event-details {
+    display: flex;
+}
+
+#host-an-event .event-details-des {
+    display: flex;
+    margin-left: 13.25%;
+    margin-bottom: 20px;
+}
+
+#host-an-event .event-details h2 {
+    padding: 15px 100px 15px 0;
+}
+
+.hostclose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    float: right;
+    display: flex;
+    font-size: 28px;
+    color: red;
+}
+
+.hostclose a,
+.fa-times {
+    font-size: 28px;
+    color: red;
+}
+
+#host-an-event .host-an-event-container {
+    margin: 0px;
+    padding: 0;
+    margin-left: 13.25%;
+}
+
+#host-an-event .host-table tr td {
+    padding: 15px;
+    font-size: 26px;
+    color: #ff5757;
+}
+
+#host-an-event .host-table input {
+    height: 40px;
+    width: 35vw;
+    margin-left: 17%;
+    align-self: center;
+    color: black;
+    font-size: 22px;
+}
+
+#host-an-event .host-table input:focus {
+    outline: none;
+}
+
+#host-an-event .host-table .submit-host {
+    margin-left: 10%;
+    height: 40px;
+    background-color: #ff5757;
+    color: white;
+    width: 50%;
+    border: none;
+}
+
+@media (max-width: 500px) {
+    #host-an-event .host-table td {
+        padding: 5px !important;
+        font-size: 18px !important;
+    }
+    #host-an-event .host-table input {
+        height: 25px;
+        margin-left: 10%;
+        align-self: center;
+        font-size: 12px;
+    }
+}
+
+
+/*-----------------------------------------------------------------
+# Directory
+-------------------------------------------------------------*/
+
+#directorytable {
+    background-color: #acd9ff;
+    color: #001636;
+    margin-top: 50px;
+    padding: 5%;
+    justify-content: space-evenly;
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 10%;
+    top: 3%;
+    right: 10%;
+    bottom: 10%;
+    width: 80%;
+    /* Full width */
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px grey;
+}
+
+#directorytable table {
+    font-size: 22px;
+    color: black;
+    font-family: 'Advent Pro';
+    width: 100%;
+}
+
+#directorytable th {
+    padding: 15px;
+    background-color: #1d3558;
+    text-align: center;
+    color: white;
+}
+
+#directorytable td {
+    padding: 10px;
+    text-align: center;
+}
+
+#directorytable tr {
+    font-size: 22px;
+    word-break:break-word;
+    color: black;
+    font-family: 'Advent Pro';
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    border-top: 2px solid #1d3558;
+}
+
+#directorytable tr:hover {
+    background-color: #ff5757;
+}
+
+#directorytable .tlevel:active {
+    background-color: red;
+}
+
+#directorytable .hostclose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    float: right;
+    display: flex;
+    /* margin-top: -70px; */
+    font-size: 28px;
+    color: red;
+}
+
+#directorytable .hostclose a {
+    font-size: 28px;
+    color: red;
+}
+
+/* Popup */
+/* The Modal (background) */
+.bulletin-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .bulletin-modal-container {
+    background-color: #acd9ff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 3px grey;
+  }
+  .bulletin-modal-container hr {
+    border-top: 3px solid white;
+  }
+  
+  #modalEvents-content-container {
+    margin: 30px;
+    max-height: 60vh;
+    overflow: auto;
+  }
+  #modalAlerts-content-container {
+    margin: 30px;
+    max-height: 60vh;
+    overflow: auto;
+  }
+  #modalRequest-content-container {
+    margin: 30px;
+    max-height: 60vh;
+    overflow: auto;
+  }
+  #modalCommunitySpeak-content-container {
+    margin: 30px;
+    max-height: 60vh;
+    overflow: auto;
+  }
+  
+  @media (max-width: 1000px) {
+    .bulletin-modal-container {
+      width: 90%;
+    }
+  }
+  
+  /* The Close Button */
+  .Eventsclose {
+    top: 10px;
+    right: 10px;
+    float: right;
+    display: flex;
+    font-size: 28px;
+    color: red;
+  }
+  
+  .Eventsclose:hover,
+  .Eventsclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* The Close Button */
+  .Alertsclose {
+    top: 10px;
+    right: 10px;
+    float: right;
+    display: flex;
+    font-size: 28px;
+    color: red;
+  }
+  
+  .Alertsclose:hover,
+  .Alertsclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* The Close Button */
+  .Requestclose {
+    top: 10px;
+    right: 10px;
+    float: right;
+    display: flex;
+    font-size: 28px;
+    color: red;
+  }
+  
+  .Requestclose:hover,
+  .Requestclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* The Close Button */
+  .CommunitySpeakclose {
+    top: 10px;
+    right: 10px;
+    float: right;
+    display: flex;
+    font-size: 28px;
+    color: red;
+  }
+  
+  .CommunitySpeakclose:hover,
+  .CommunitySpeakclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .bulletin-modal-content p {
+    font-size: 16pt;
+  }
+  .bulletin-modal-content h2 {
+    margin: 0;
+  }
+  .bulletin-modal-content div.inputContainer {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  div.inputContainer input {
+    background-color: white;
+    width: 80%;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    height: 35px;
+    padding: 15px;
+    font-size: 16pt;
+  }
+  div.inputContainer input:focus {
+    outline: none;
+  }
+  
+  div.inputContainer button {
+    background-color: #1d325e;
+    width: 80px;
+    color: white;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    font-size: 16pt;
+  }
+  
+  @media (max-width: 600px) {
+    .bulletin-modal-container {
+      width: 90%;
+    }
+  
+    div.inputContainer button {
+      width: 65px;
+    }
+  
+    div.inputContainer input {
+      width: 70%;
+    }
+  }
+
+
+/*----------- Bulletin ------------*/
+div .text-xs 
+{
+  font-size: 18px !important;
+}
+
+div .mb-0
+{
+  font-size: 16px !important;
+}
